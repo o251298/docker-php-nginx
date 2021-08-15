@@ -5,6 +5,10 @@
 
 <body>
 <h1>Hello World!</h1>
+<?php
+
+
+?>
 <?
 echo "wwww" . '<br>';
 
@@ -59,7 +63,7 @@ do{
     $i++;
 } while($i <= 3);
 
-
+var_dump(get_defined_vars());
 
 
 ?>
@@ -67,7 +71,9 @@ do{
 
 
 
-<p><?php echo 'We are running PHP, version: ' . phpversion(); ?></p>
+<p><?php echo 'We are running PHP, version: ' . phpversion();
+?></p>
+
 <?
 $database ="dbphp";
 $user = "root";
