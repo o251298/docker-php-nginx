@@ -12,3 +12,10 @@ function selectMethod(){
         return $res = "WELLCOME";
     }
 }
+function isGuest(){
+    if (isset($_COOKIE['username'])){
+        return $name = $_COOKIE['username'];
+    } else {
+        return $name = "Гость";
+    }
+}
